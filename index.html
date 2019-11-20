@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="practice-area1">
+        <div class="script-output"></div>
+        <div class="male">Male</div>
+        <div class='female'>Female</div>
+        
+        <div ></div>
+        <div class='proposal-male' ></div>
+        <div class="proposal-female" ></div>
+
+        <div ></div>
+        <div ></div>
+        <div ></div>
+
+        <div ></div>
+        <div ></div>
+        <div ></div>
+    </div>
+    <script>
+    //   1. HW for Monday
+     let find = document.querySelector('.script-output');
+     console.log(find);
+     let a = 'The number of visitors: ';
+     let b = 45;
+     let c = ` ${a} ${b}`;
+     console.log(c);
+     find.innerHTML=c;
+
+    //  2. HW for Thursday
+//    gender counter
+// let p=0;
+// function gendercount(){
+//     p = p + 1;
+//     console.log( `${p}` );
+// }
+//  let Male=document.querySelector('.male');
+//  Male.addEventListener('click', gendercount);
+
+// gender offer
+    let PrM = document.querySelector('.proposal-male');
+    let PrF = document.querySelector('.proposal-female');
+    let g= 'Buy some flowers to your girlfriend';
+    let m= 'Buy a car to your man'
+    
+    let gender=null;
+    let Male=document.querySelector('.male');
+    let Female=document.querySelector('.female');
+    
+    Male.addEventListener('click', function(){
+        gender='male';
+        if(gender === 'male'){
+        PrM.innerHTML= g ;
+        PrF.innerHTML= null;
+    }
+    })
+    Female.addEventListener('click', function(){
+        gender='female';
+        if(gender === 'female'){
+            PrF.innerHTML=m;
+            PrM.innerHTML=null;
+        }
+    })
+    
+    
+    </script>
+</body>
+</html>
